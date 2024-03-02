@@ -1,0 +1,25 @@
+{
+  "name": "nextalk",
+  "version": "1.0.0",
+  "description": "Real-time browser chat with ghost mode and live message reactions, built with Node.js, Express, and Socket.IO",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/smoke-test.js"
+  },
+  "keywords": [
+    "socket.io",
+    "chat",
+    "realtime",
+    "express"
+  ],
+  "author": "Akshat Gupta",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.7.5"
+  }
+}
