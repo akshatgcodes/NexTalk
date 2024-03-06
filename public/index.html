@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexTalk</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="join-screen" class="screen">
+    <div class="join-card">
+      <h1>NexTalk</h1>
+      <p class="tagline">Real-time chat. Live reactions. Ghost mode.</p>
+      <form id="join-form">
+        <label for="username">Username</label>
+        <input id="username" type="text" maxlength="30" placeholder="e.g. akshat" required />
+
+        <label for="room">Room</label>
+        <input id="room" type="text" maxlength="40" placeholder="e.g. general" required />
+
+        <label class="checkbox-row">
+          <input id="ghost-toggle" type="checkbox" />
+          Join as ghost (lurk without appearing online)
+        </label>
+
+        <button type="submit">Join room</button>
+      </form>
+      <p id="join-error" class="error" hidden></p>
+    </div>
+  </div>
+
+  <div id="chat-screen" class="screen" hidden>
+    <aside id="sidebar">
+      <div class="room-heading">
+        <h2 id="room-name"></h2>
+        <span id="my-status" class="status-badge"></span>
+      </div>
+      <button id="exit-ghost-btn" hidden>Exit ghost mode</button>
+      <h3>Online <span id="online-count">(0)</span></h3>
+      <ul id="user-list"></ul>
+      <button id="leave-btn">Leave room</button>
+    </aside>
+
+    <main id="chat-main">
+      <div id="messages"></div>
+      <form id="message-form">
+        <input id="message-input" type="text" maxlength="1000" placeholder="Type a message..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
