@@ -77,3 +77,7 @@ Run it with:
 ```bash
 npm test
 ```
+
+## Notes
+
+Built as a focused, single-purpose tool - a real-time chat app, nothing more, nothing less.
