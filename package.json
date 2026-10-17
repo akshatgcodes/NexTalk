@@ -17,9 +17,9 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.19.2",
-    "socket.io": "^4.7.5"
+    "socket.io": "^4.8.4"
   },
   "devDependencies": {
-    "socket.io-client": "^4.7.5"
+    "socket.io-client": "^4.8.4"
   }
 }
