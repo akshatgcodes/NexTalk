@@ -4,5 +4,5 @@ services:
     runtime: node
     plan: free
     region: singapore
-    buildCommand: npm ci
+    buildCommand: npm ci && cd landing && npm ci && npm run build
     startCommand: npm start

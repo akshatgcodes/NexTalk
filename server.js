@@ -11,7 +11,10 @@ const io = new Server(server);
 
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
+// "/" is the landing page (Next.js static export in landing/out, built at
+// deploy time); the chat client itself lives under /chat/.
+app.use('/chat', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'landing', 'out')));
 
 // ---------------------------------------------------------------------------
 // In-memory state. Nothing here touches disk or a database -- it all lives

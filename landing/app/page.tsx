@@ -104,10 +104,10 @@ function SiteHeader() {
           </a>
         </nav>
         <a
-          href="#run-it"
+          href="/chat/"
           className="rounded-full bg-zinc-100 px-4 py-1.5 text-sm font-medium text-zinc-950 transition hover:bg-white"
         >
-          Get started
+          Open the chat
         </a>
       </div>
     </header>
@@ -145,8 +145,14 @@ function Hero() {
           </p>
           <div className="mt-10 flex items-center justify-center gap-4">
             <a
-              href="#x-factor"
+              href="/chat/"
               className="rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-emerald-300"
+            >
+              Try it live
+            </a>
+            <a
+              href="#x-factor"
+              className="rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-zinc-100 transition hover:bg-white/5"
             >
               See the X Factor
             </a>
