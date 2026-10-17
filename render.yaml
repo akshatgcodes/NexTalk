@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: nextalk
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm ci
+    startCommand: npm start

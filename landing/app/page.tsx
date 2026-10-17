@@ -437,7 +437,7 @@ function RunIt() {
                 <span className="text-zinc-600"># clone &amp; enter the project</span>
                 {"\n"}
                 <span className="text-emerald-400">git</span> clone
-                https://github.com/&lt;you&gt;/NexTalk.git{"\n"}
+                https://github.com/akshatgcodes/NexTalk.git{"\n"}
                 <span className="text-emerald-400">cd</span> NexTalk{"\n\n"}
                 <span className="text-zinc-600"># install dependencies</span>
                 {"\n"}
